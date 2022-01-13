@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
+import ProductList from "../src/pages/ProductList";
 
 const App = () => {
-  return <Home />;
+  return <ProductList />;
 };
 
 export default App;
