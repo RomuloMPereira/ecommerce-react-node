@@ -10,6 +10,9 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Container = styled.div`
     display: flex;
+    @media only screen and (max-width: 380px) {
+        flex-direction: column;
+    }
 `
 
 const Left = styled.div`
@@ -46,6 +49,9 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width: 380px) {
+        display: none;
+    }
 `
 
 const Title = styled.h3`
@@ -68,6 +74,9 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    @media only screen and (max-width: 380px) {
+        background-color: #fff8f8;
+    }
 `
 
 const ContactItem = styled.div`

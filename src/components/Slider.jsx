@@ -11,6 +11,9 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    @media only screen and (max-width: 380px) {
+      display: none;
+    }
 `
 
 const Arrow = styled.div`

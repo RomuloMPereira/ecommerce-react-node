@@ -20,6 +20,9 @@ const Description = styled.div`
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 20px;
+    @media only screen and (max-width: 380px) {
+        text-align: center;
+    }
 `
 
 const InputContainer = styled.div`
@@ -29,6 +32,9 @@ const InputContainer = styled.div`
     display: flex;
     justify-content: space-between;
     border: 1px solid lightgray;
+    @media only screen and (max-width: 380px) {
+        width: 80%;
+    }
 `
 
 const Input = styled.input`
