@@ -6,6 +6,9 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Container = styled.div`
     height: 60px;
+    @media only screen and (max-width: 380px) {
+      height: 50px;
+    }
 `
 
 const Wrapper = styled.div`
@@ -13,6 +16,9 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 380px) {
+      padding: 10px 0px;
+    }
 `
 
 const Left = styled.div`
@@ -24,6 +30,9 @@ const Left = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    @media only screen and (max-width: 380px) {
+      display: none;
+    }
 `
 
 const SearchContainer = styled.div`
@@ -32,10 +41,17 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    @media only screen and (max-width: 380px) {
+      width: 50px;
+      margin-left: 10px;
+    }
 `
 
 const Input = styled.input`
     border: none;
+    @media only screen and (max-width: 380px) {
+      width: 50px;
+    }
 `
 
 const Center = styled.div`
@@ -45,6 +61,9 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
+    @media only screen and (max-width: 380px) {
+      font-size: 15px;
+    }
 `
 
 const Right = styled.div`
@@ -52,12 +71,20 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media only screen and (max-width: 380px) {
+      justify-content: center;
+      flex: 2;
+    }
 `
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    @media only screen and (max-width: 380px) {
+      font-size: 12px;
+      margin-left: 10px;
+    }
 `
 
 const Navbar = () => {
@@ -67,7 +94,7 @@ const Navbar = () => {
                 <Left>
                     <Language>EN</Language>
                     <SearchContainer>
-                        <Input />
+                        <Input placeholder='Search' />
                         <SearchIcon style={{ color: "gray", fontSize: 16 }} />
                     </SearchContainer>
                 </Left>
